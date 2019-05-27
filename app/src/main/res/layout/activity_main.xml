@@ -12,12 +12,9 @@
               android:id="@+id/et_base_currency"
     android:hint="@string/value"
     />
-    <androidx.appcompat.widget.AppCompatTextView
-            style="@style/WidthMatchHeightWrap"
-            android:text="@string/insert_usd"/>
     <Spinner style="@style/WidthMatchHeightWrap"
         android:id="@+id/sp_currency_name"/>
     <androidx.appcompat.widget.AppCompatTextView
-            style="@style/WidthMatchHeightWrap"
+            style="@style/TextViewResult"
             android:id="@+id/tv_final_result"/>
 </LinearLayout>

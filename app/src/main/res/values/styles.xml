@@ -14,4 +14,9 @@
     <style name="EditTextNumber" parent="WidthMatchHeightWrap">
         <item name="android:inputType">number</item>
     </style>
+    <style name="TextViewResult" parent="WidthMatchHeightWrap">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>

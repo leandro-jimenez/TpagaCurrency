@@ -67,8 +67,10 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
         val name: String = currencies.getCurrencyNames().get(position)
-        val selectedCurrency: Double = et_base_value.toString().toDouble()
-        Log.d("selected",currencies.getCurrencyValue(name,selectedCurrency).toString())
+        if (!et_base_value.text.isNullOrEmpty()) {
+            val selectedCurrency: Double = et_base_value.text.toString().toDouble()
+            tv_result_value.setText(currencies.getCurrencyValue(name, selectedCurrency).toString())
+        }
     }
 
     override fun onNothingSelected(parent: AdapterView<*>?) {

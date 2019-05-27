@@ -2,5 +2,5 @@
     <string name="app_name">TpagaTest</string>
     <string name="currency_url">https://api.exchangeratesapi.io/latest?base=USD</string>
     <string name="insert_usd">Inserte valor en dolares</string>
-    <string name="value">Valor</string>
+    <string name="value">Inserte valor en dolares</string>
 </resources>
